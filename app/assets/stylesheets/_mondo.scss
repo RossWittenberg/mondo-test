@@ -1,13 +1,41 @@
 @import "colors";
+@import "fonts";
 
 body {
 	background: asset-url('mondo-bg.png');
 	background-size: cover;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	margin: 40px 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.padding-15 {
+	padding: 15px;
+}
+
 nav {
-	height: 60px;
-	width: 100vw;
+	height: 72px;
+	@media screen and (max-width: 991px) {
+		height: 60px;
+	}
+	@media screen and (max-width: 768px) {
+		height: 54px;
+	}
+	width: inherit;
 	a, p {
 		color: $white;
     -webkit-transition: all 300ms ease-in-out;
@@ -47,6 +75,12 @@ nav {
 	margin: 8px 0;
 }
 
+p.alert,
+p.notice {
+	padding: 0;
+	margin: 0;
+}
+
 button {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -62,6 +96,13 @@ button {
     z-index: 1;
     position: absolute;
     right: 20px;
+    top: 20px;
+		@media screen and (max-width: 991px) {
+			top: 14px;
+		}
+		@media screen and (max-width: 768px) {
+			top: 9px;
+		}
 		&.active {
 			right: 220px;
 			.icon-bar {
@@ -69,6 +110,10 @@ button {
 			}
 		}
 	}	
+}
+
+.big-icon {
+	font-size: 112px;
 }
 
 
@@ -82,3 +127,17 @@ ul.navbar-nav {
   padding: 10px;
   z-index: 0;
 }
+
+.cms__wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+}
+
+.cms__links--inner-wrapper {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+}
+
