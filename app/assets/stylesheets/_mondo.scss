@@ -12,11 +12,23 @@ h3,
 h4,
 p,
 a {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	color: $dark-blue;
+	&:hover {
+		text-decoration: none;
+	}	
 }
 
 h1 {
 	margin: 40px 0;
+	color: $dark-blue;
 }
 
 .inline-block {
@@ -140,5 +152,9 @@ ul.navbar-nav {
   width: 120px;
   margin: 0 auto;
   display: block;
+  a {
+	  &:hover {
+	  	color: $blue;
+	  }
+  }
 }
-
