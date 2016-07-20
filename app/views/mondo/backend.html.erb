@@ -4,9 +4,11 @@
 	</h1>
 	<div class="container">
 		<div class="cms__links--outer-wrapper">
-			<div class="cms__links--inner-wrapper">
-				<%= link_to ('<i class="big-icon fa fa-user" aria-hidden="true"></i><br><h2 class="text-aligned__center">Users</h2>').html_safe, users_path, class: "inline-block padding-15" %>
-				<%= link_to ('<i class="big-icon fa fa-file-text-o" aria-hidden="true"></i><br><h2 class="text-aligned__center">Posts</h2>').html_safe, posts_path, class: "inline-block padding-15"%>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<%= link_to ('<i class="big-icon fa fa-user" aria-hidden="true"></i><br><h2 class="text-aligned__center">Users</h2>').html_safe, users_path, class: "cms__links" %>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<%= link_to ('<i class="big-icon fa fa-file-text-o" aria-hidden="true"></i><br><h2 class="text-aligned__center">Posts</h2>').html_safe, posts_path, class: "cms__links"%>
 			</div>
 	</div>
 </div>	

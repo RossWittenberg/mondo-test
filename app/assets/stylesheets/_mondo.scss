@@ -135,9 +135,10 @@ ul.navbar-nav {
 	background-color: $white;
 }
 
-.cms__links--inner-wrapper {
-	display: block;
-	width: 250px;
-	margin: 0 auto;
+.cms__links {
+  text-align: center;
+  width: 120px;
+  margin: 0 auto;
+  display: block;
 }
 
