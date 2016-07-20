@@ -9,32 +9,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="collapse navbar-collapse" id="nav-menu-collapse">
+   	<ul class="nav navbar-nav">
+			<div class="container">
+				<li class="nav"><%= link_to('Home', root_path, class: "nav") %></li>
+				<% if admin_signed_in? %>
+					<li class="nav"><%= link_to('Sign Out', destroy_admin_session_path, method: :delete, class: "nav") %></li>
+				<% else %>
+					<li class="nav"><%= link_to('Sign In', new_admin_session_path, class: "nav") %></li>
+					<li class="nav"><%= link_to('Sign Up', new_admin_registration_path, class: "nav") %></li>
+				<% end %>
+				<li class="nav">
+					<a class="nav" href="/mondo/backend">Back End</a>
+				</li>
+			</div>	
+    </ul>
+  </div>
 	<div class="container">
 		<nav class="navbar navbar-default">
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu-collapse" aria-expanded="false">
+	      <button type="button" class="navbar-trigger">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar first"></span>
 	        <span class="icon-bar second"></span>
 	        <span class="icon-bar third"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">
-	      	<%= image_tag("selus-logo.png", alt: "Selus Logo", class: "nav-logo")%>
+	      <a class="navbar-brand" href="/">
+	      	<%= image_tag("selus-logo.png", alt: "Selus Logo", class: "nav-logo")%><span class="logo-text">Selus</span>
 	      </a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="nav-menu-collapse">
-	     	<ul class="nav navbar-nav">
-					<li><%= link_to 'Home', root_path %></li>
-					<% if admin_signed_in? %>
-						<li><%= link_to('Sign Out', destroy_admin_session_path, method: :delete) %></li>
-					<% else %>
-						<li><%= link_to 'Sign In', new_admin_session_path %></li>
-						<li><%= link_to 'Sign Up', new_admin_registration_path %></li>
-					<% end %>
-					<li>
-						<a href="/mondo/backend">Back End</a>
-					</li>
-	      </ul>
 	    </div>
 		</nav>
 	</div>	
