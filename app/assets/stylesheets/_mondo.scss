@@ -1,6 +1,9 @@
 @import "colors";
 @import "fonts";
 
+$tablet: 991px;
+$mobile: 768px;
+
 body {
 	background: asset-url('mondo-bg.png');
 	background-size: cover;
@@ -32,13 +35,16 @@ a{
 		color: $white;
 		font-weight: 400;
 		display: inline-block;
+		&:hover {
+			color: $blue;
+		}
 	}	
 }
 
 li.nav {
 	display: inline-block;
 	margin-right: 30px;
-	padding-top: 6px;
+	padding-top: 8px;
 }
 
 h1 {
@@ -63,7 +69,7 @@ nav {
 	}
 	@media screen and (max-width: 768px) {
 		height: 54px;
-		margin-top: 20px;
+		margin-top: 66px;
 	}
 	width: inherit;
 	a, p {
@@ -79,6 +85,10 @@ nav {
 			text-decoration: none;
 		}
 	}
+}
+
+.navbar {
+	padding: 0; 
 }
 
 .navbar-brand > img {
@@ -178,5 +188,74 @@ ul.navbar-nav {
   h2 {
 	  	color: $blue;
 	  }
+  }
+}
+
+.logo-text {
+	color: $white;
+	display: inline-block;
+	@extend .montserrat;
+	letter-spacing: .02em;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.title-text {
+	@extend .logo-text;
+	font-weight: 400;
+	font-size: 48px;
+	@media screen and (max-width: $tablet) {
+		font-size: 42px;
+	}
+	@media screen and (max-width: $mobile) {
+		font-size: 36px;
+	}
+}
+
+.title__outer--wrapper {
+	display: table;
+	height: 600px;
+	width: 100%;
+	@media screen and (max-width: $tablet) {
+		height: 400px;		
+	}
+}
+.title__wrapper {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+.title__inner--wrapper {
+  display: block;
+  width: 418px;
+  margin: auto;
+	@media screen and (max-width: $tablet) {
+		width: 365px;		
+	}
+	@media screen and (max-width: $mobile) {
+		width: 313px;
+	}
+}
+
+.button__wrapper.title {
+  width: 192px;
+  margin: 66px auto 0;
+}
+
+button.button {
+	@extend .hover-transition;
+  width: 192px;
+  border: 2px solid $blue;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 14px 0;
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .02em;
+  &:hover {
+  	background-color: $blue;
   }
 }

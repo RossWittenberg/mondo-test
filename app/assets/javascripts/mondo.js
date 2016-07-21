@@ -9,6 +9,6 @@ var MONDO = {
 	}
 }
 
-$(document).ready(function() {
+$(function () {
 	MONDO.addListeners();	
 });
