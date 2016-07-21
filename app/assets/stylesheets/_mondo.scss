@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+@import "col-xl";
 
 $tablet: 991px;
 $mobile: 768px;
@@ -16,6 +17,10 @@ body {
   transition: all 300ms ease-in-out;
 }
 
+.right {
+	float: right !important;
+}
+
 h1,
 h2,
 h3,
@@ -24,6 +29,17 @@ p,
 a {
 	@extend .hover-transition;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.body-text {
+	line-height: 2.57; 
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .02em;
+	color: $light-blue;
+	&.headphones {
+		margin-top: 60px;
+	}
 }
 
 a{
@@ -295,3 +311,28 @@ button.button {
 		}
 	}
 }
+
+// Headphones Section
+.headphones__wrapper {
+	margin-top: 60px;
+}
+
+.headphones__container {
+  max-width: 2000px;
+  margin: 0 100px;
+	@media screen and (max-width: $tablet) {
+		margin: 0 60px;
+  }
+}
+
+img.headphones {
+	position: absolute;
+	left: 0;
+	@media screen and (max-width: $tablet) {
+		left: -100px;
+	}
+}
+
+.button__wrapper.headphones {
+	margin-top: 60px;
+} 
