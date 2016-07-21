@@ -61,6 +61,9 @@ li.nav {
 	display: inline-block;
 	margin-right: 30px;
 	padding-top: 8px;
+	@media screen and (max-width: $mobile) {
+		margin-right: 10px;
+	}
 }
 
 h1 {
@@ -83,7 +86,7 @@ nav {
 		height: 60px;
 		margin-top: 64px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mobile) {
 		height: 54px;
 		margin-top: 66px;
 	}
@@ -118,7 +121,7 @@ nav {
 	@media screen and (max-width: 991px) {
 		height: 60px;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $mobile) {
 		height: 54px;
 	}
 }
@@ -160,7 +163,7 @@ button {
 		@media screen and (max-width: 991px) {
 			top: 14px;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: $mobile) {
 			top: 9px;
 		}
 		&.active {
