@@ -337,15 +337,10 @@ button.button {
 
 img.headphones {
 	position: absolute;
+	max-width: 100%;
 	left: 0;
 	@media screen and (max-width: 1200px) {
 		opacity: .5;
-	}
-	@media screen and (max-width: $tablet) {
-		left: -100px;
-	}
-	@media screen and (max-width: $mobile) {
-		left: -200px;
 	}
 }
 
