@@ -220,6 +220,7 @@ ul.navbar-nav {
 	@extend .logo-text;
 	font-weight: 400;
 	font-size: 48px;
+	margin-bottom: 0;
 	@media screen and (max-width: $tablet) {
 		font-size: 42px;
 	}
@@ -289,6 +290,7 @@ button.button {
 		height: 475px;		
 	}
 	@media screen and (max-width: $mobile ) {
+		height: 300px;
 		background-position-y: 10%
 	}
 	.screens__image--wrapper {
@@ -314,22 +316,36 @@ button.button {
 
 // Headphones Section
 .headphones__wrapper {
-	margin-top: 60px;
+	margin-top: 80px;
+	overflow: hidden;
 }
 
 .headphones__container {
-  max-width: 2000px;
+	position: relative;
+	float: right;
+	width: calc(50% - 100px);
   margin: 0 100px;
-	@media screen and (max-width: $tablet) {
-		margin: 0 60px;
+	@media screen and (max-width: 1200px) {
+		width: calc(100% - 60px);
+		margin: 0 30px;
   }
+}
+
+.headphones__image-wrapper {
+	max-width: 100%;
 }
 
 img.headphones {
 	position: absolute;
 	left: 0;
+	@media screen and (max-width: 1200px) {
+		opacity: .5;
+	}
 	@media screen and (max-width: $tablet) {
 		left: -100px;
+	}
+	@media screen and (max-width: $mobile) {
+		left: -200px;
 	}
 }
 
