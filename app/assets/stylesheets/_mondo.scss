@@ -21,8 +21,25 @@ body {
 	float: right !important;
 }
 
+.relative-z-1 {
+	position: relative;
+  z-index: 1;
+}
+
 .text__align--center {
 	text-align: center;
+}
+
+.mobile-only {
+	@media screen and (max-width: $mobile) {
+		display: block;
+	}
+}
+
+.hidden-mobile {
+	@media screen and (max-width: $mobile) {
+		display: hidden;
+	}
 }
 
 h1,
@@ -73,6 +90,22 @@ li.nav {
 h1 {
 	margin: 40px 0;
 	color: $white;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: .02em;
+	font-weight: 24px;
+	@media screen and (max-width: $tablet) {
+		font-size: 20px;
+	}
+	@media screen and (max-width: $mobile) {
+		font-size: 18px;
+	}
+	&.feature {
+		color: $white;
+	}
 }
 
 .inline-block {
@@ -392,4 +425,48 @@ img.headphones {
 	@media screen and (max-width: $tablet) {
 		width: 275px;
 	}
+}
+
+.features__inner--wrapper {
+	margin-top: 120px;
+}
+
+.feature__wrapper {
+  margin-bottom: 60px;
+}
+
+.features-phone__image--wrapper {
+	img {
+	  margin: 0 auto;
+	  display: block;
+	  width: calc(100% - 30px);
+	}
+	&.hidden-mobile {
+		@media screen and (max-width: $mobile) {
+			display: none;
+		}
+	}
+	&.mobile {
+		@media screen and (min-width: $mobile) {
+			display: none;
+		}
+		img {
+			width: auto;
+    	max-height: 300px;
+		}
+	}
+}
+
+.features-phone-shadow__wrapper {
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+  z-index: 0;
+  position: relative;
+  @media screen and (max-width: $mobile){
+  	transform: scale(.6); 	
+  	img {
+  		width: 100% !important;
+  	}
+  } 
 }
