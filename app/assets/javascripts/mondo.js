@@ -6,6 +6,10 @@ var MONDO = {
 			$(navMenuCollapse).toggle(400).toggleClass('collapse');
 			$(this).toggleClass('active');
 		});
+		$('.screens__image--wrapper').click(function(event) {
+			$('.screens__image--wrapper').removeClass('large').addClass('small');
+			$(this).addClass('large');
+		});
 	}
 }
 

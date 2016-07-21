@@ -259,3 +259,39 @@ button.button {
   	background-color: $blue;
   }
 }
+
+
+
+.screens__wrapper {
+	display: table;
+	height: 700px;
+	width: 100%;
+	background: asset-url('screens-waves.png') no-repeat;
+	background-size: contain;
+  background-position-y: 30%;
+	@media screen and (max-width: $tablet) {
+		height: 475px;		
+	}
+	@media screen and (max-width: $mobile ) {
+		background-position-y: 10%
+	}
+	.screens__image--wrapper {
+		cursor: pointer;
+		@extend .hover-transition;
+		img {
+			-webkit-box-shadow: 0px 0px 120px 10px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 0px 120px 10px rgba(0,0,0,0.5);
+			box-shadow: 0px 0px 120px 10px rgba(0,0,0,0.5);
+			width: 100%;
+		}
+		&.small {
+			padding: 40px;
+			@media screen and (max-width: $mobile) {
+				padding: 20px;
+			}
+		}	
+		&.large {
+			padding: 0;
+		}
+	}
+}
