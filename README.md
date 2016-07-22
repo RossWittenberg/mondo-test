@@ -10,13 +10,13 @@ The majority of the HTML for this page can be found at => app/views/mondo
 
 Styles can be found at ==> app/assets/stylesheets/_mondo.scss (with some partials and vendor files at app/assets/stylesheets)
 
-I used [Slick.js](https://kenwheeler.github.io/slick/) for the image
+I used [Slick.js](https://kenwheeler.github.io/slick/) for the opinions image slider and [Backstretch.js](http://srobbin.com/jquery-plugins/backstretch/) to resize the background image of the same section.
 
 ## Part 2
 
 Create a [CMS](https://mondo-test.herokuapp.com/mondo/backend). I chose to create a blog. 
 
-The CMS can be accessed via the navigation bar (reveled when 'hamburger' is clicked) or directly at **https://mondo-test.herokuapp.com/mondo/backend**
+The CMS can be accessed via the navigation bar (revealed when 'hamburger' is clicked) or directly at **https://mondo-test.herokuapp.com/mondo/backend**
 
 Upon attempting the access the CMS portion of the application, a user will be prompted to login with existing admin credentials or create a new admin account. For this feature I used 'Devise', a very popular authentication/authorization gem. 
 
