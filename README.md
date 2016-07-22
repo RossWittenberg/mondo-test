@@ -6,9 +6,9 @@ Both parts 1 & 2 are contained within a single Rails application. It is hosted [
 
 Recreate [Selus homepage](https://mondo-test.herokuapp.com/), based on designs provided.
 
-The majority of the HTML for this page can be found at => app/views/mondo
+The majority of the HTML for this page can be found at => [app/views/mondo](https://github.com/RossWittenberg/mondo-test/tree/master/app/views/mondo)
 
-Styles can be found at ==> app/assets/stylesheets/_mondo.scss (with some partials and vendor files at app/assets/stylesheets)
+Styles can be found at ==> [app/assets/stylesheets/_mondo.scss](https://github.com/RossWittenberg/mondo-test/blob/master/app/assets/stylesheets/_mondo.scss) (with some partials and vendor files at [app/assets/stylesheets](https://github.com/RossWittenberg/mondo-test/tree/master/app/assets/stylesheets))
 
 I used [Slick.js](https://kenwheeler.github.io/slick/) for the opinions image slider and [Backstretch.js](http://srobbin.com/jquery-plugins/backstretch/) to resize the background image of the same section.
 

@@ -12,6 +12,13 @@ var MONDO = {
 			$(this).addClass('large');
 		});
 
+		$('.screens__image--wrapper').hover(function() {
+			$('.screens__image--wrapper').removeClass('large').addClass('small');
+			$(this).addClass('large');
+		}, function() {
+			$(this).removeClass('large').addClass('small');
+		});
+
 	}
 }
 
