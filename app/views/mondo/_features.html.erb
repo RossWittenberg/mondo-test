@@ -1,0 +1,59 @@
+<div class="features__wrapper">
+	<div class="features__header--wrapper">
+		<h2 class="text__align--center title-text"><span class="text__align--center blue">Selus</span> with lots of features</h2>
+	</div>
+	<div class="features__inner--wrapper">
+		<div class="mobile features-phone__image--wrapper">
+			<%= image_tag('features-phone-image.png', class: "features-phone")%>
+			<div class="features-phone-shadow__wrapper relative-z-1">
+				<%= image_tag('features-phone-shadow.png', class: "relative-z-1 features-phone-shadow")%>
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 relative-z-1">
+			<div class="feature__wrapper">
+				<%= render partial: 'speaker_svg' %>
+				<h3 class="feature">
+					Lorem ipsum dolor sit amet
+				</h3>
+				<p class="body-text">
+					Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.
+				</p>
+			</div>
+			<div class="feature__wrapper">
+				<%= render partial: 'activity_svg' %>
+				<h3 class="feature">
+					Lorem ipsum dolor sit amet
+				</h3>
+				<p class="body-text">
+					Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.
+				</p>			
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 hidden-mobile features-phone__image--wrapper">
+			<%= image_tag('features-phone-image.png', class: "features-phone")%>
+			<div class="features-phone-shadow__wrapper relative-z-1">
+				<%= image_tag('features-phone-shadow.png', class: "relative-z-1 features-phone-shadow")%>
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 relative-z-1">
+			<div class="feature__wrapper">
+				<%= render partial: 'headphones_svg' %>
+				<h3 class="feature">
+					Lorem ipsum dolor sit amet
+				</h3>
+				<p class="body-text">
+					Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.
+				</p>		
+			</div>
+			<div class="feature__wrapper">
+				<%= render partial: 'cd_svg' %>
+				<h3 class="feature">
+					Lorem ipsum dolor sit amet
+				</h3>
+				<p class="body-text">
+					Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
