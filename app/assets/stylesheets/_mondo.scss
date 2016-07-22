@@ -76,6 +76,15 @@ a {
 	font-size: 10px;
 }
 
+.devise__link {
+	color: $white;
+	font-size: 18px;
+	&:hover {
+		text-decoration: none;
+		color: darken($white, 10%)
+	}
+}
+
 abbr[title] {
 	border: none;
 }
@@ -813,6 +822,9 @@ form {
 	  &:hover {
 	  	background-color: $blue;
 	  }
+  	&:focus {
+			outline: none !important;
+		}
   }
   label {
   	color: $white;
