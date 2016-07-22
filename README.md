@@ -20,7 +20,7 @@ The CMS can be accessed via the navigation bar (reveled when 'hamburger' is clic
 
 Upon attempting the access the CMS portion of the application, a user will be prompted to login with existing admin credentials or create a new admin account. For this feature I used 'Devise', a very popular authentication/authorization gem. 
 
-In order to view part 2 of this assignment, one will have to [create an admin account](https://mondo-test.herokuapp.com/admins/sign_up). The email does not need to be a working address. 
+In order to view part 2 of this assignment, one will have to [create an admin account](https://mondo-test.herokuapp.com/admins/sign_up). The email used does not need to be a working address. 
 
 Once logged in, an admin-user now has access to all CRUD actions for both 'Users' and 'Posts'. This includes associating a post with a user. 
 
