@@ -17,3 +17,7 @@
 
 //= require jquery
 //= require bootstrap-sprockets
+//= require backstretch
+//= require slick
+
+

@@ -475,9 +475,13 @@ img.headphones {
 // Perspective Section
 
 .perspective__wrapper {
-	margin-top: 80px;
-	overflow-x: hidden;
-	width: 100%;
+  margin-top: 80px;
+  overflow: hidden;
+  width: 100%;
+  padding: 120px 0 200px;
+	@media screen and (min-width: 1400px) {
+	  padding: 400px 0 600px;
+  }
 }
 
 .perspective__container {
@@ -512,10 +516,99 @@ img.perspective {
 	right: 0;
 	@media screen and (max-width: 1200px) {
     position: relative;
-    right: -100px;
 	}
 }
 
 .button__wrapper.perspective {
 	margin-top: 60px;
 } 
+
+// Opinions Section 
+
+.opinions__wrapper {
+	height: 585px;
+	background-color: $background-blue;
+}
+
+.opinions__bg-image--wrapper {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+.opinions__text--outer-wrapper  {
+	display: table;
+  height: 585px;
+  width: 100%;
+}
+
+.opinions__text--inner-wrapper {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#dotsWrrapper {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  position: relative;
+  z-index: 9;
+}
+
+.opinion__dots {
+	padding: 0;
+	li {
+		padding: 12px;
+		display: inline-block;
+		button {
+			font-size: 0;
+    	height: 16px;
+    	width: 12px;
+			border: 2px solid #20385e;
+			border-radius: 50px;
+			background-color: transparent;
+		}
+	}
+	li.slick-active {
+		button {
+			background-color: $blue;
+			border-color: $blue;
+		}
+	}
+}
+
+.opinions__text--wrapper {
+  max-width: 908px;
+  text-align: center;
+  margin: 0 auto;
+  .opinions-text {
+  	@extend .body-text;
+		font-size: 24px;
+		@media screen and (max-width: $tablet)  {
+			font-size: 20px;
+		}
+		@media screen and (max-width: $mobile)  {
+			font-size: 16px;
+		}
+		line-height: 2;	
+  }
+	img.opinion-face {
+		display: inline-block;
+		padding-right: 16px;
+	}
+}
+
+.tiny-blue {
+	 font-size: 14px;
+	 color: $tiny-blue;
+}
+
+.avatar__wrapper {
+	margin: 80px 0 20px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: -150px;
+}
