@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'simple_form'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem "font-awesome-rails"
+gem 'rails_12factor'
 
 
 gem 'devise'
