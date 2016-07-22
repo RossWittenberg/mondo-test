@@ -170,6 +170,8 @@ nav {
 	border-radius: 6px;
 	background-color: $blue;
 	margin: 8px 0;
+	z-index: 1;
+	position: relative;
 	@extend .hover-transition;
 }
 
@@ -588,7 +590,7 @@ img.perspective {
 		button {
 			font-size: 0;
     	height: 16px;
-    	width: 12px;
+    	width: 16px;
 			border: 2px solid #20385e;
 			border-radius: 50px;
 			background-color: transparent;
