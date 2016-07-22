@@ -18,7 +18,7 @@ Create a [CMS](https://mondo-test.herokuapp.com/mondo/backend). I chose to creat
 
 The CMS can be accessed via the navigation bar (revealed when 'hamburger' is clicked) or directly at **https://mondo-test.herokuapp.com/mondo/backend**
 
-Upon attempting the access the CMS portion of the application, a user will be prompted to login with existing admin credentials or create a new admin account. For this feature I used 'Devise', a very popular authentication/authorization gem. 
+Upon attempting to access the CMS portion of the application, a user will be prompted to login with existing admin credentials or create a new admin account. For this feature I used 'Devise', a very popular authentication/authorization gem. 
 
 In order to view part 2 of this assignment, one will have to [create an admin account](https://mondo-test.herokuapp.com/admins/sign_up). The email used does not need to be a working address. 
 
