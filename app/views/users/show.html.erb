@@ -1,24 +1,48 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<div class="container margin__top--40">
+	
+	<p class="blue">
+	  First name:
+	</p>
+	 
+	<h4 class="white">
+		<%= @user.first_name %>
+	</h4>
+	<hr class="cms">
+	<br>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+	<p class="blue">
+	  Last name:
+	</p>
+	 
+	<h4 class="white">
+	  <%= @user.last_name %>
+	</h4>
+	<hr class="cms">
+	<br>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+	<p class="blue">
+	  Email:
+	</p>
+	 
+	<h4 class="white">
+	  <%= @user.email %>
+	</h4>
+	<hr class="cms">
+	<br>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+	<p class="blue">
+	  Username:
+	</p>
+	 
+	<h4 class="white">
+	  <%= @user.username %>
+	</h4>
+	<hr class="cms">
+	<br>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+	<%= link_to 'Edit', edit_user_path(@user) %>
+	<br>
+	<%= link_to 'Back', users_path %>
+</div>	

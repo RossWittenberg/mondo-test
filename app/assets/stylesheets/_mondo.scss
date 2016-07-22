@@ -6,6 +6,7 @@ $tablet: 991px;
 $mobile: 768px;
 
 body {
+	@extend .montserrat;
 	background: asset-url('mondo-bg.png');
 	background-size: cover;
 }
@@ -26,7 +27,12 @@ body {
   z-index: 1;
 }
 
-.text__align--center {
+.margin__top--40 {
+	margin-top: 40px;
+}
+
+.text__align--center,
+.center {
 	text-align: center;
 }
 
@@ -49,7 +55,7 @@ h4,
 p,
 a {
 	@extend .hover-transition;
-	font-family: 'Montserrat', sans-serif;
+	@extend .montserrat;
 }
 
 .body-text {
@@ -60,6 +66,37 @@ a {
 	color: $light-blue;
 	&.headphones {
 		margin-top: 60px;
+	}
+}
+
+
+.hint {
+	color: $white;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+abbr[title] {
+	border: none;
+}
+
+.notice {
+	@extend .montserrat;
+	text-align: center;
+	text-transform: uppercase;
+	color: $blue;
+}
+
+.alert,
+.error_notification,
+.error {
+	@extend .montserrat;
+	text-align: center;
+	text-transform: uppercase;
+	color: $red;
+	&.error {
+		font-size: 12px;
+		display: block;
 	}
 }
 
@@ -90,6 +127,11 @@ li.nav {
 h1 {
 	margin: 40px 0;
 	color: $white;
+}
+
+h2.center {
+	color: $white;
+	margin-bottom: 40px;
 }
 
 h3 {
@@ -723,3 +765,68 @@ hr.footer {
   	}
   }
 }
+
+// CMS 
+
+hr.cms {
+	border-top: 1px solid $white;
+	display: block;
+}
+// Forms
+
+form {
+	width: 300px;
+  margin: 0 auto;
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    margin: 40px 0;
+  	width: 300px;
+  	&:focus {
+  		outline: none;
+  	}
+  }
+  textarea {
+  	width: 300px;
+  	height: 300px;
+  }
+  select {
+  	width: 300px;
+  }
+  input[type="submit"] {
+		@extend .hover-transition;
+	  width: 192px;
+	  border: 2px solid $blue;
+	  background-color: transparent;
+	  border-radius: 50px;
+	  padding: 14px 0;
+	  color: $white;
+	  font-size: 14px;
+	  font-weight: 400;
+	  letter-spacing: .02em;
+	  margin: 40px auto 0;
+	  display: block;
+	  &:hover {
+	  	background-color: $blue;
+	  }
+  }
+  label {
+  	color: $white;
+  	@extend .montserrat;
+  	text-align: center;
+  }
+}
+
+table {
+	background-color: $white;
+	width: 100%;
+	th, td {
+		padding: 10px;
+		border: 1px solid $light-gray-2;
+	}
+}
+
