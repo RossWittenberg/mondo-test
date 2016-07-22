@@ -279,10 +279,10 @@ ul.navbar-nav {
 	&.download {
     margin: 140px 0 100px;
 		@media screen and (max-width: $tablet) {
-    	margin: 80px 0 40px;
+    	margin: 80px 0 80px;
 		}
 		@media screen and (max-width: $mobile) {
-    	margin: 60px 0 20px;
+    	margin: 60px 0 60px;
 		}
 	}
 }
@@ -648,6 +648,9 @@ p.download {
   max-width: 900px;
   display: block;
   margin: auto;
+	img {
+		width: 100%;
+	}
 }
 
 // Footer
@@ -666,6 +669,12 @@ hr.footer {
 }
 
 .footer__text--wrapper {
+	span.right,
+	span.left {
+		@media screen and (max-width: $mobile)  {
+			float: left !important;
+		}
+	}
 	width: calc(100% - 200px);
 	margin: 0 100px;
 	@media screen and (max-width: $tablet) {
@@ -676,6 +685,10 @@ hr.footer {
 		line-height: 6.5;
 		color: $blue;
 		font-weight: 700;
+		@media screen and (max-width: $mobile)  {
+			font-size: 12px;
+			line-height: 2;
+		}
 	}
   ul {
   	list-style-type: none;
@@ -684,6 +697,9 @@ hr.footer {
   	li {
   		display: inline-block;
   		padding-right: 16px;
+			@media screen and (max-width: $mobile)  {
+				padding-right: 4px;
+			}
   		a {
   			@extend .hover-transition;
   			line-height: 6.5;
@@ -694,6 +710,10 @@ hr.footer {
   				text-decoration: none;
 					color: lighten($blue, 10%);
   			}
+				@media screen and (max-width: $mobile)  {
+					font-size: 12px;
+  				line-height: 2;
+				}
   		}
   	}
   }
