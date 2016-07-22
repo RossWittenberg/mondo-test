@@ -12,6 +12,8 @@ The majority of the HTML for this page can be found at => app/views/mondo
 
 Create a [CMS](https://mondo-test.herokuapp.com/mondo/backend). I chose to create a blog. 
 
+The CMS can be accessed via the navigation bar (reveled when 'hamburger' is clicked) and at **https://mondo-test.herokuapp.com/mondo/backend**
+
 Upon attempting the access the CMS portion of the application, a user will be prompted to login with existing admin credentials or create a new admin account. For this feature I used 'Devise', a very popular authentication/authorization gem. 
 
 Once logged in, an admin-user now has access to all CRUD actions for both 'Users' and 'Posts'. This includes associating a post with a user. 
